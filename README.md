@@ -20,3 +20,5 @@ Usados en el proyecto: [vueinit]
 - En el router se importa dinámicamente para que la solitud de una ruta nueva sea bajo demanda
 
 - Uso de useRouter para obtener los params de la página
+
+- Para rutas dinámicas [unplugin vue router](https://uvr.esm.is/)
