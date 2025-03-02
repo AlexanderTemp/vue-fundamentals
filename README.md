@@ -41,3 +41,26 @@ create table projects(
 
 insert into projects (name, slug) values ('project one', 'project-one');
 ```
+
+- Ctrl + D para reemplazar varios valores
+
+- Cómo trabajar con supabase
+
+  1. Se debe de crear un archivo migrate con el código sql para la creación de una nueva tabla
+
+  ```sql
+  npm run db:migrate:new NOMBRE_SCHEMA
+  npm run db:reset
+  ```
+
+  2. Se debe de actualizar los tipos de supabase
+
+  ```sql
+  npm run supabase:types
+  ```
+
+  3. Se actualiza el archivo database/seed.js con la nueva tabla
+
+  ```sql
+  npm run db:seed
+  ```
