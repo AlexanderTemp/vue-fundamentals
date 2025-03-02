@@ -7,23 +7,23 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: ()=>import('@/pages/index.vue')
+      component: () => import('@/pages/index.vue'),
     },
     {
       path: '/projects',
-      name: "projects",
-      component:  ()=>import('@/pages/projects/index.vue')
+      name: 'projects',
+      component: () => import('@/pages/projects/index.vue'),
     },
     {
       path: '/projects/:id',
       name: 'single-project',
-      component: ()=>import("@/pages/projects/[id].vue")
+      component: () => import('@/pages/projects/[slug].vue'),
     },
     {
       path: '/:catchAll(.*)*',
       name: 'not-found',
-      component: h('p', {style: 'color:red;'}, '404 not found')
-    }
+      component: h('p', { style: 'color:red;' }, '404 not found'),
+    },
   ],
 })
 
