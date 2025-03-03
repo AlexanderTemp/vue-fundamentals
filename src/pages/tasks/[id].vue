@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useRoute } from 'vue-router'
-
 const router = useRoute()
 const slug = computed(() => (router.params as { id?: string }).id ?? '')
 </script>
