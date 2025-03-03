@@ -64,3 +64,5 @@ insert into projects (name, slug) values ('project one', 'project-one');
   ```sql
   npm run db:seed
   ```
+
+- Auto imports para auto importar router o vue-router [unplugin-auto-import](https://github.com/unplugin/unplugin-auto-import)
