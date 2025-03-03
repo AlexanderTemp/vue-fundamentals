@@ -66,3 +66,4 @@ insert into projects (name, slug) values ('project one', 'project-one');
   ```
 
 - Auto imports para auto importar router o vue-router [unplugin-auto-import](https://github.com/unplugin/unplugin-auto-import)
+- Auto imports para componentes [unplugin-vue-components](https://github.com/unplugin/unplugin-vue-components)
