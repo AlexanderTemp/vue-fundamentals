@@ -3,6 +3,7 @@ import VueRouter from 'unplugin-vue-router/vite'
 import autoprefixer from 'autoprefixer'
 import tailwind from 'tailwindcss'
 import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -23,6 +24,9 @@ export default defineConfig({
       imports: ['vue', VueRouterAutoImports],
       dts: './auto-imports.d.ts',
       viteOptimizeDeps: true,
+    }),
+    Components({
+      /* options */
     }),
     vue({
       template: {

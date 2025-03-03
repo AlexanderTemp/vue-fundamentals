@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import type { ILink } from '@/types/layout'
-import SidebarLinks from './SidebarLinks.vue'
-import Button from '../ui/button/Button.vue'
 
 const links: Array<ILink> = [
   {
