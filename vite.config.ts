@@ -21,9 +21,16 @@ export default defineConfig({
     VueRouter(),
     AutoImport({
       include: [/\.[tj]sx?$/, /\.vue$/, /\.vue\?vue/, /\.vue\.[tj]sx?\?vue/, /\.md$/],
-      imports: ['vue', VueRouterAutoImports],
+      imports: [
+        'vue',
+        VueRouterAutoImports,
+        {
+          pinia: ['defineStore', 'storeToRefs', 'acceptHMRUpdate'],
+        },
+      ],
       dts: './auto-imports.d.ts',
       viteOptimizeDeps: true,
+      dirs: ['src/stores'],
     }),
     Components({
       /* options */

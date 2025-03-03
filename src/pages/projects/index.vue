@@ -5,6 +5,10 @@ import type { ColumnDef } from '@tanstack/vue-table'
 import DataTable from '@/components/ui/data-table/DataTable.vue'
 import { RouterLink } from 'vue-router'
 
+const { pageData } = usePageStore()
+
+pageData.title = 'Projects'
+
 const projects = ref<Tables<'projects'>[] | null>(null)
 const getProjects = async () => {
   const { data, error } = await supabase.from('projects').select()

@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { pageData } = usePageStore()
+
+pageData.title = 'Homepage'
+</script>
 
 <template>
   <div>
